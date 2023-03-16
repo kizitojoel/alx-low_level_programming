@@ -2,7 +2,8 @@
 
 /**
  * main - This is the main function of the program
- * Return : Return 0 if the function exits properly
+ * parameterx: This function takes in a void parameter 
+ * Return: Return 0 if the function exits properly
 */
 int main(void)
 {
