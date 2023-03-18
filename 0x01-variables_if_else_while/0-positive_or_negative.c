@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/*
+/**
  * main - main program function
  * @void: takes in no parameters
  * Description: This is the main program function
