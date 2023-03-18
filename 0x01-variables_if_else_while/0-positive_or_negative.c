@@ -5,7 +5,7 @@
 
 /*
  * main - main program function
- * parameter void - takes in no parameters
+ * @void - takes in no parameters
  * Description - This is the main program function
  * Return - returns zero if the program is successful
  */
