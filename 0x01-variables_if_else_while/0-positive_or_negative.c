@@ -5,9 +5,9 @@
 
 /*
  * main - main program function
- * @void - takes in no parameters
- * Description - This is the main program function
- * Return - returns zero if the program is successful
+ * @void: takes in no parameters
+ * Description: This is the main program function
+ * Return: returns zero if the program is successful
  */
 int main(void)
 {
