@@ -3,8 +3,8 @@
 
 /**
  * print_to_98 - main function
- * @n - the starting integer
- * Description - prints the numbers up to 98
+ * @n: the starting integer
+ * Description: prints the numbers up to 98
  * Return: nothing
  */
 void print_to_98(int n)
