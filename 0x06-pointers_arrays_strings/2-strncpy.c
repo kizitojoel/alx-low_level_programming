@@ -4,6 +4,7 @@
  * _strncpy - copies a string
  * @dest: destination string
  * @src: source string
+ * @n: maximum numberof characters to copy
  * Description: copies source into dest upto n characters
  * Return: returns dest
  */
