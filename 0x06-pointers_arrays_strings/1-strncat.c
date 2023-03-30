@@ -12,7 +12,8 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *start_of_string;
 	int i;
-	
+
+	i = 0;
 	start_of_string = dest;
 	while (*dest != '\0')
 		dest++;
