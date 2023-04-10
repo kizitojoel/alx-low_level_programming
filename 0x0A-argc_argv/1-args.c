@@ -4,7 +4,7 @@
 /**
  * main - checks main function
  * @argc: the number
- * @argc: argument vector
+ * @argv: argument vector
  *
  * Return: 0
  */
