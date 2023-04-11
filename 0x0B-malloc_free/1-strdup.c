@@ -3,7 +3,7 @@
 
 /**
  * _strdup - returns the pointer to a duplicate of the string argument
- * @ str: the string to be copied
+ * @str: the string to be copied
  *
  * Return: the pointer to the duplicate
  */
@@ -14,12 +14,16 @@ char *_strdup(char *str)
 	char *counter = str;
 	char *dup;
 
+	if (str == NULL)
+		return (NULL);
 	while (*counter != '\0')
 	{
 		i++;
 		counter++;
 	}
 	dup = malloc(sizeof(char) * (i + 1));
+	if (dup == NULL)
+		return (NULL);
 	for (j = 0; j <= i; j++)
 	{
 		dup[j] = str[j];
