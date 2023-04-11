@@ -12,25 +12,21 @@ char *str_concat(char *s1, char *s2)
 {
 	int count1 = 0;
 	int count2 = 0;
-	int i = 0;
 	char *concat;
 	char *copy;
+	int i;
 
 	if (s1)
 	{
 		copy = s1;
-		while (*copy != '\0')
-		{
-			copy++;
+		while (*(copy++) != '\0')
 			count1++;
-		}
 	}
 	if (s2)
 	{
 		copy = s2;
-		while (*copy != '\0')
+		while (*(copy++) != '\0')
 		{
-			copy++;
 			count2++;
 		}
 	}
