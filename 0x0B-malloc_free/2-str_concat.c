@@ -16,28 +16,40 @@ char *str_concat(char *s1, char *s2)
 	char *concat;
 	char *copy;
 
-	copy = s1;
-	while (*copy != '\0')
+	if (s1)
 	{
-		copy++;
-		count1++;
+		copy = s1;
+		while (*copy != '\0')
+		{
+			copy++;
+			count1++;
+		}
 	}
-	copy = s2;
-	while (*copy != '\0')
+	if (s2)
 	{
-		copy++;
-		count2++;
+		copy = s2;
+		while (*copy != '\0')
+		{
+			copy++;
+			count2++;
+		}
 	}
 	concat = malloc(sizeof(char) * (count1 + count2 + 1));
 	if (concat == NULL)
 		return (NULL);
-	for (i = 0; i <= count1; i++)
+	if (s1 != NULL)
 	{
-		concat[i] = s1[i];
+		for (i = 0; i <= count1; i++)
+		{
+			concat[i] = s1[i];
+		}
 	}
-	for (i = count1; i <= count1 + count2; i++)
+	if (s2 != NULL)
 	{
-		concat[i] = s2[i - count1];
+		for (i = count1; i <= count1 + count2; i++)
+		{
+			concat[i] = s2[i - count1];
+		}
 	}
 	concat[count1 + count2 + 1] = '\0';
 	return (concat);
