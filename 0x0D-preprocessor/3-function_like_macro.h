@@ -1,4 +1,4 @@
-#ifndef ABS_CHECK
-#define ABS_CHECK 0
+#ifndef _HEADER_
+#define _HEADER_
 #define ABS(x) ((x) >= 0 ? (x) : (-x))
-#endif /*ifndef ABS_CHECK*/
+#endif /*ifndef _HEADER_*/
