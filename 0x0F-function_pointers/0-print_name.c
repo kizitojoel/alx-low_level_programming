@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * print_name - calls the passed function
  * @name: the string to be printed
