@@ -12,17 +12,18 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	char *duplicate;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	if (str == NULL || head == NULL)
+	if (str == NULL)
 		return (NULL);
-	duplicate = strdup(str);
-	new->str = duplicate;
-	new->len = _strlen(duplicate);
-	new->next = *head;
+	new->str = strdup(str);
+	new->len = _strlen(str);
+	if (*head != NULL)
+		new->next = *head;
+	else
+		new->next = NULL;
 	*head = new;
 	return (new);
 }
@@ -32,7 +33,7 @@ list_t *add_node(list_t **head, const char *str)
  * @s: the string pointer
  * Return: the number of characters in a string
  */
-unsigned int _strlen(char *s)
+unsigned int _strlen(const char *s)
 {
 	unsigned int count = 0;
 
