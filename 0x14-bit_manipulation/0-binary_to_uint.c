@@ -15,8 +15,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	else
-		dup = b;
+	dup = b;
 	while (*dup != '\0')
 	{
 		if (*dup != '0' && *dup != '1')
